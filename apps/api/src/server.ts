@@ -145,7 +145,7 @@ app.register(fastifyStatic, {
 });
 
 app.listen({
-    host: 'localhost',
+    host: '0.0.0.0',
     port: process.env.PORT ? Number(process.env.PORT) : 3000,
 }).then(() => {
     console.log(`HTTP Server running on port ${process.env.PORT ?? 3000}`);
