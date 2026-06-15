@@ -52,15 +52,17 @@ import { prisma } from "./lib/prisma";
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
 app.register(fastifyCors, {
-    origin: [
-        'http://localhost:5173',
-        'http://localhost:5000',
-        'http://0.0.0.0:5173',
-        'http://0.0.0.0:5000',
-        /\.replit\.dev$/,
-        /\.repl\.co$/,
-        /\.app\.github\.dev$/,
-    ],
+  origin: [
+    'https://indietest237.netlify.app',  // ← adicionar
+    'http://localhost:5173',
+    'http://localhost:5000',
+    'http://0.0.0.0:5173',
+    'http://0.0.0.0:5000',
+    /\.replit\.dev$/,
+    /\.repl\.co$/,
+    /\.app\.github\.dev$/,
+  ],
+  
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
