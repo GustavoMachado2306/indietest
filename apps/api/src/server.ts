@@ -58,6 +58,8 @@ app.register(fastifyCors, {
     'http://localhost:5000',
     'http://0.0.0.0:5173',
     'http://0.0.0.0:5000',
+    'https://indietest.online',
+    'https://www.indietest.online',
     /\.replit\.dev$/,
     /\.repl\.co$/,
     /\.app\.github\.dev$/,
